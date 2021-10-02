@@ -1,0 +1,29 @@
+.img {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.info {
+  display: flex;
+}
+
+.genres {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.genres li {
+  margin-right: 10px;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+.button {
+  margin-bottom: 10px;
+}
