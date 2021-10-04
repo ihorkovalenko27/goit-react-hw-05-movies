@@ -5,10 +5,10 @@ import 'react-toastify/dist/ReactToastify.css';
 import Container from './components/Container/Container';
 import AppBar from './components/AppBar/AppBar';
 
-const HomePage = lazy(() => import('./components/HomePage/HomePage'));
-const MovieDetailsPage = lazy(() => import('./components/MoviesDetailsPage/MoviesDetailsPage'));
-const MoviesPage = lazy(() => import('./components/MoviesPage/MoviesPage'));
-const NotFoundPage = lazy(() => import('./components/NotFoundPage/NotFoundPage'));
+const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
+const MovieDetailsPage = lazy(() => import('./pages/MoviesDetailsPage/MoviesDetailsPage'));
+const MoviesPage = lazy(() => import('./pages/MoviesPage/MoviesPage'));
+const NotFoundPage = lazy(() => import('./pages/NotFoundPage/NotFoundPage'));
 
 function App() {
   return (

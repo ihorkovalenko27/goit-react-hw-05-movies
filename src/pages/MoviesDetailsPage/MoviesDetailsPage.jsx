@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, lazy } from 'react';
 import {
   useParams,
   NavLink,
@@ -7,10 +7,10 @@ import {
   useLocation,
   useHistory,
 } from 'react-router-dom';
-import * as movieApi from '../services/movieApi';
+import * as movieApi from '../../services/movieApi';
 import s from './MovieDetailsPage.module.css';
-import Cast from '../Cast/Cast';
-import Reviews from '../Reviews/Reviews';
+const Cast = lazy(() => import('../../components/Cast/Cast'));
+const Reviews = lazy(() => import('../../components/Reviews/Reviews'));
 
 export default function MoviesDetailsPage() {
   const history = useHistory();

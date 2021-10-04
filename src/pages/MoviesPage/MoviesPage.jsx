@@ -1,9 +1,9 @@
 import { useLocation, useHistory } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
-import * as movieApi from '../services/movieApi';
+import * as movieApi from '../../services/movieApi';
 import 'react-toastify/dist/ReactToastify.css';
-import MoviesList from '../MoviesList/MoviesList';
+import MoviesList from '../../components/MoviesList/MoviesList';
 export default function MoviesPage() {
   const location = useLocation();
   const history = useHistory();
